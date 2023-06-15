@@ -1,0 +1,46 @@
+[
+	{
+		"id": "0",
+		"name": "Acción"
+	},
+	{
+		"id": "1",
+		"name": "Animacion"
+	},
+	{
+		"id": "2",
+		"name": "Crimen"
+	},
+	{
+		"id": "3",
+		"name": "Familia"
+	},
+	{
+		"id": "4",
+		"name": "Miesterio"
+	},
+  {
+		"id": "5",
+		"name": "Suspenso"
+	},
+  {
+		"id": "6",
+		"name": "Terror"
+	},
+  {
+		"id": "7",
+		"name": "Romance"
+	},
+  {
+		"id": "8",
+		"name": "Drama"
+	},
+  {
+		"id": "9",
+		"name": "Terror"
+	},
+  {
+		"id": "10",
+		"name": "Ciencia Ficcion"
+	}
+]
