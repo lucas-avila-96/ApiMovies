@@ -24,7 +24,7 @@ class Genre implements JsonSerializable
 
     /**
      * @ORM\OneToMany(targetEntity="Movie", mappedBy="genre")
-     * @var Movie[] An ArrayCollection of Movie objects.
+     * @var \Doctrine\Common\Collecition\ArrayCollection
      */
     private $movies;
 
@@ -37,6 +37,7 @@ class Genre implements JsonSerializable
 	) {
 		$this->id = $data["id"];
 		$this->name = $data["name"];
+        $this->movies = new ArrayCollection;
 	}
 
 

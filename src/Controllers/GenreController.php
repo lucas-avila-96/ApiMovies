@@ -45,10 +45,11 @@ class GenreController
 
 public function getAllMovies(Request $request, Response $response, $args)
 {
-        $genreId = $args['id'];
-		$genre = json_encode($this->genreService->getMovies($genreId), JSON_PRETTY_PRINT);
-		$response->getBody()->write($genre);
-		return $response;
+    $genreId = $args['id'];
+    $genre = $this->genreService->getGenre($genreId);
+    $movies = json_encode($genre->getMovies());
+    $response->getBody()->write($movies);
+    return $response;
 }
 
 

@@ -45,12 +45,4 @@ class GenreService
 		return $genre;
 	}
 
-	public function getMovies()
-    {
-		$genreRepository = $this->entityManager->getRepository(Genre::class);
-		$genre = $genreRepository->find($id);
-		$movies = $genre.getMovies();
-		return $movies;
-	}
-
 }
